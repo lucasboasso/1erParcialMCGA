@@ -4,9 +4,7 @@ Este es el primer parcial de la materia MCGA de la Facultad de Sistemas de la UA
 
 Alumno: **Lucas Boasso**
 
----
-
-## Consignas
+## Consignas  
 
 Desarrollar un servidor API REST que cumpla con los siguientes requisitos:  
 
@@ -48,3 +46,17 @@ ejecución de la aplicación, url del repositorio y nombre del o los alumnos.
 
 - Creación de una colección de Postman con todos los métodos del servidor documentados,
 listos para ser testeados.
+
+## Comandos para ejecutar la aplicacion
+
+> - npm install
+> - npm start
+> - Direccion local: http://localhost:3030
+
+## Obtener todos los datos de la coleccion Productos
+
+## Obtener solo 1 dato de la coleccion Productos
+
+## Agregar datos a la coleccion Productos
+
+## Borrar 1 dato de la coleccion Productos
