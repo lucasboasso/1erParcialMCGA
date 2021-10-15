@@ -7,7 +7,7 @@ const getAllProducts = async (req, res) => {
         res.json(producto);
     }
     catch{
-        res.json({ message: "error"})
+        res.json({ message: "No existe ningun producto cargado"})
     }
 };
 
@@ -17,30 +17,9 @@ const getOneProduct = async (req, res) => {
         res.json(producto);
     }
     catch{
-        res.json({ message: "No existe ese producto o no esta cargado"})
+        res.status(404).send({ message: "No existe ese producto o no esta cargado"})
     }
 };
-
-/* const postProduct = async (req, res) => {
-    const producto = new Producto({
-        codigo: req.body.codigo,
-        nombre: req.body.nombre,
-        marca: req.body.marca,
-        precio: req.body.precio,
-        descripcion: req.body.descripcion,
-        stock: req.body.stock,
-    });
-    try{
-        const dupProduct = await modeloProducto.findOne({codigo: req.body.codigo})
-        if (dupProduct == false){
-            const saveProducto = await producto.save();
-            res.json({saveProducto, message: "Nuevo producto agregado"});        
-        }
-    }
-    catch (error){
-        res.json({ message: error})
-    }
-}; */
 
 const postProduct = async (req, res) => {
     const producto = new Producto({
@@ -56,13 +35,13 @@ const postProduct = async (req, res) => {
         res.json({saveProducto, message: "Nuevo producto agregado"});
     }
     catch (error){
-        res.json({ message: error})
+        res.json({ message: ""})
     }
 };
 
 const putProduct = (req, res) => {
-    let id = req.params.id
-    let update = req.body
+    const id = req.params.id
+    const update = req.body
 
     modeloProducto.findByIdAndUpdate(id, update, (err, productoUpdate) => {
         if(err){
