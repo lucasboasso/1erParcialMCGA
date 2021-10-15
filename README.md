@@ -47,16 +47,29 @@ ejecución de la aplicación, url del repositorio y nombre del o los alumnos.
 - Creación de una colección de Postman con todos los métodos del servidor documentados,
 listos para ser testeados.
 
+## Esquema de la coleccion
+
+Se trabaja en una coleccion de productos el cual tiene el siguiente esquema de ejemplo en formato JSON:
+
+>{
+>    "codigo": 891238,
+>    "nombre": "Lata de atun",
+>    "marca": "La Campagnola",
+>    "precio": 167,
+>    "descripcion": "Lata de lomo de atun",
+>    "stock": 50
+>}
+
 ## Comandos para ejecutar la aplicacion
 
 > - npm install
 > - npm start
 > - Direccion local: http://localhost:3030
 
-## Obtener todos los datos de la coleccion Productos
+## Direccion remota Heroku
 
-## Obtener solo 1 dato de la coleccion Productos
+https://primerparcialmcga.herokuapp.com/
 
-## Agregar datos a la coleccion Productos
+## Coleccion de Postman en el repositorio
 
-## Borrar 1 dato de la coleccion Productos
+https://github.com/lucasboasso/1erParcialMCGA/blob/master/1erParcialMCGA.postman_collection.json
