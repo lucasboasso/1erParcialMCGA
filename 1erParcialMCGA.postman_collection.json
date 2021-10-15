@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "44620fb8-7732-4532-8cfe-e70803a15057",
+		"name": "1erParcialMCGA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://primerparcialmcga.herokuapp.com/api/productos",
+					"protocol": "https",
+					"host": [
+						"primerparcialmcga",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getOneProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://primerparcialmcga.herokuapp.com/api/productos/61671d0d67f1f7b1393c998c",
+					"protocol": "https",
+					"host": [
+						"primerparcialmcga",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"productos",
+						"61671d0d67f1f7b1393c998c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\": 891238,\r\n    \"nombre\": \"Lata de TUNA\",\r\n    \"marca\": \"La Campagnola\",\r\n    \"precio\": 167,\r\n    \"descripcion\": \"Lata de lomo de atun\",\r\n    \"stock\": 50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://primerparcialmcga.herokuapp.com/api/productos",
+					"protocol": "https",
+					"host": [
+						"primerparcialmcga",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putProduct",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\": 891238,\r\n    \"nombre\": \"Lata de sardinas\",\r\n    \"marca\": \"Arcor\",\r\n    \"precio\": 582,\r\n    \"descripcion\": \"Lata de sardinas en salmuera\",\r\n    \"stock\": 25\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://primerparcialmcga.herokuapp.com/api/productos/61671d0d67f1f7b1393c998c",
+					"protocol": "https",
+					"host": [
+						"primerparcialmcga",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"productos",
+						"61671d0d67f1f7b1393c998c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delProduct",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://primerparcialmcga.herokuapp.com/api/productos/61671d0d67f1f7b1393c998c",
+					"protocol": "https",
+					"host": [
+						"primerparcialmcga",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"productos",
+						"61671d0d67f1f7b1393c998c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
