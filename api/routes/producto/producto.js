@@ -3,8 +3,8 @@ const router = express.Router();
 const {getOneProduct, getAllProducts, postProduct, putProduct, delProduct} = require('../../controllers/producto')
 
 router.get('/', getAllProducts);
-router.get('/:id', getOneProduct);
 router.post('/', postProduct);
+router.get('/:id', getOneProduct);
 router.put('/:id', putProduct);
 router.delete('/:id', delProduct);
 
